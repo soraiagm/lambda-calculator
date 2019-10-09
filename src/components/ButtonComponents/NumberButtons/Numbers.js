@@ -4,13 +4,13 @@ import NumberButton from "./NumberButton.js";
 
 const Numbers = () => {
   // STEP 2 - add the imported data to state
-  const [numbersState, setNumberState] = useState(numbers);
+  const [numbersState] = useState(numbers);
 
   return (
     <div className="numbers_container">
       {
-        numbersState.map((number, index) => (
-          <NumberButton key={index} number={number} />
+        numbersState.map((numbers, index) => (
+          <NumberButton key={index} numbers={numbers} />
         )) 
        }
     </div>

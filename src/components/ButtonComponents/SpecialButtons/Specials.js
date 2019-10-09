@@ -3,7 +3,7 @@ import { specials } from '../../../data';
 import SpecialButton from "./SpecialButton.js";
 
 const Specials = () => {
-   const [specialsState, setSpecialsState] = useState(specials);
+   const [specialsState] = useState(specials);
   
   return (
     <div className="specials_container">
