@@ -58,6 +58,9 @@
       margin: 20px;
       border-radius: 50%;
       font-size: 2rem;
+      background-color: #008ae6;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
   }
 
   .number_button {
@@ -66,6 +69,9 @@
       margin: 20px;
       border-radius: 50%;
       font-size: 2rem;
+      background-color: #004d99;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
   }
 
   .operator_button {
@@ -74,6 +80,9 @@
       margin: 20px;
       border-radius: 50%;
       font-size: 2rem;
+      background-color: #0086b3;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
   }
 
   .display_number {

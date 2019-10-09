@@ -1,15 +1,16 @@
-import React, {useState} from "react";
-import { specials } from '../../../data';
+import React from "react";
+// import { specials } from '../../../data';
 import SpecialButton from "./SpecialButton.js";
 
-const Specials = () => {
-   const [specialsState] = useState(specials);
+const Specials = (props) => {
+  //  const [specialsState] = useState(specials);
   
   return (
     <div className="specials_container">
       {
-        specialsState.map((special, index) => (
-          <SpecialButton key={index} special={special} />
+        props.specialsState.map((special, index) => (
+          <SpecialButton key={index} special={special} 
+          specialsDisplay={props.changeDisplay} />
         ))
       }
     </div>

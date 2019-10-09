@@ -1,9 +1,14 @@
 import React from "react";
 
 const NumberButton = (props) => {
+
+  // let newNumber = props.numbers;
+  // console.log(newNumber);
+
+  let clickFunc = () => props.numbersDisplay(props.numbers);
   return (
     <>
-    <button className="number_button">
+    <button className="number_button" onClick={clickFunc} >
        {props.numbers}
     </button>
     </>

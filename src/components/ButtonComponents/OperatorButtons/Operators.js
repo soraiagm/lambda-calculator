@@ -1,18 +1,16 @@
-import React, {useState} from "react";
-import { operators } from '../../../data';
+import React from "react";
+// import { operators } from '../../../data';
 import OperatorButton from "./OperatorButton.js";
 
-//import any components needed
-
-//Import your array data to from the provided data file
-
-const Operators = () => {
-  const [operatorsState] = useState(operators);
-  // STEP 2 - add the imported data to state
+const Operators = (props) => {
+  // const [operatorsState] = useState(operators);
+  
   return (
     <div className="operators_container">
-      {operatorsState.map((operator, index) => (
-          <OperatorButton key={index} operator={operator}/>
+      {
+        props.operatorsState.map((operator, index) => (
+          <OperatorButton key={index} operator={operator}
+          operatorsDisplay={props.changeDisplay} />
         ))
       }
     </div>
