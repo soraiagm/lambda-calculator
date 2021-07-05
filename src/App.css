@@ -20,3 +20,71 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .App {
+      display: flex;
+      margin: 20px;
+  }
+
+  .specials_container {
+      display: flex;
+  }
+
+  .specials_numbers_container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .operators_container {
+      display: flex;
+      flex-direction: column;
+  }  
+
+  .logo-container {
+      margin: 20px;
+  }
+
+  .logo {
+      margin: 10px;
+  }
+
+  .display {
+      margin: 25px;
+  }
+
+  .special_button {
+      width: 90px;
+      height: 90px;
+      margin: 20px;
+      border-radius: 50%;
+      font-size: 2rem;
+      background-color: #008ae6;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
+  }
+
+  .number_button {
+      width: 90px;
+      height: 90px;
+      margin: 20px;
+      border-radius: 50%;
+      font-size: 2rem;
+      background-color: #004d99;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
+  }
+
+  .operator_button {
+      width: 90px;
+      height: 90px;
+      margin: 20px;
+      border-radius: 50%;
+      font-size: 2rem;
+      background-color: #0086b3;
+      color: white;
+      box-shadow: 0 8px 15px 0 black;
+  }
+
+  .display_number {
+      margin: 0;
+  }
